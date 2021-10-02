@@ -251,7 +251,7 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-    left: -60px;
+    margin-left: -60px;
     right: auto;
 }
 

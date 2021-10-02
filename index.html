@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/mobile-adaptive.css">
 
     <script defer src="js/jquery.js"></script>
     <script defer src="js/main.js"></script>
@@ -24,7 +25,7 @@
 <body>
     <header class="header">
         <div class="navbar">
-            <img src="img/logo.png" alt="logo">
+            <img class="img-adaptive" src="img/logo.png" alt="logo">
             <nav class="navbar__nav">
                 <ul class="navbar__menu">
                     <li class="navbar__items"><a href="http://">Программа семестра</a></li>
@@ -46,6 +47,37 @@
             <span class="header__tel">+7 (495) 748-00-66</span>
             <button class="header__button button">Записаться</button>
         </div>
+
+        <div class="mobile-navbar">
+            <img class="img-adaptive" src="img/logo.png" alt="logo">
+
+            <div class="mobile-navbar__social-links">
+                <a href="#">
+                    <img src="img/whatsapp.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/telegram.png" alt="">
+                </a>
+            </div>
+            <span class="mobile-header__tel">+7 (495) 748-00-66</span>
+            <div class="mobile__menu-btn">
+                <span class="menu-btn__row row-1"></span>
+                <span class="menu-btn__row row-2"></span>
+                <span class="menu-btn__row row-3"></span>
+            </div>
+            <nav class="mobile-navbar__nav">
+                <ul class="mobile-navbar__menu">
+                    <li class="mobile-navbar__items"><a href="http://">Программа семестра</a></li>
+                    <li class="mobile-navbar__items"><a href="http://">Стоимость</a></li>
+                    <li class="mobile-navbar__items"><a href="http://">Адреса</a></li>
+                    <li class="mobile-navbar__items"><a href="http://">Истории</a></li>
+                    <li class="mobile-navbar__items"><a href="http://">Команда</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
     </header>
 
     <main class="main">
@@ -81,7 +113,7 @@
                         </a>
                     </div>
                 </div>
-                <img src="img/boy.png" alt="boy">
+                <img class="main-info__img img-adaptive" src="img/boy.png" alt="boy">
             </div>
         </section>
         <section class="programm">
@@ -311,7 +343,9 @@
 
             </div>
             <div class="pluses__see-all see-all_button">
-                <p class="pluses__see-all_text">Смотреть ещё 16 преимуществ</p>
+                <p class=" pluses__see-all_text pluses__desktop-version_text">Смотреть ещё 16 преимуществ</p>
+                <p class=" pluses__see-all_text pluses__mobile-version_text">Смотреть ещё 18 преимуществ</p>
+
                 <svg class="pluses__down-arrow icon" height="16px" width="16px">
                     <use xlink:href="img/icons.svg#arrowdown"></use>
                 </svg>
@@ -327,9 +361,7 @@
                         Каждый семестр на проектных занятиях наши ученики создают робототизированные решения для школьной проектной деятельности по предметам Окружающий мир, Физика, Математика, Биология, Технология и пополняют проектного портфолио
                     </p>
                 </div>
-                <div class="projects__image">
-                    <img src="img/diary.png" alt="diary">
-                </div>
+                <img class="projects__image" src="img/diary.png" alt="diary">
             </div>
         </section>
 
@@ -407,8 +439,8 @@
             <div class="robots__content">
                 <span class="robots__content-items first-item">От эскиза</span>
                 <span class="robots__content-items second-item">До аватарки!</span>
-                <span class="robots__array"><img src="img/robots-array.png" alt=""></span>
-                <img src="img/robots.png" alt="robots">
+                <span class="robots__array"><img class="img-adaptive" src="img/robots-array.png" alt="robots-array"></span>
+                <img class="img-adaptive" src="img/robots.png" alt="robots">
             </div>
         </section>
 
@@ -426,7 +458,7 @@
                         <div class="swiper-wrapper">
                             <div class="stories__swiper swiper-slide">
                                 <div class="stories__swiper-video">
-                                    <img src="img/play.png" alt="play">
+                                    <img class="stories__siper-video_img img-adaptive" src="img/stories-video.png" alt="play">
                                 </div>
                                 <div class="stories__video-info">
                                     <h5 class="stories__video-title">Костя</h5>
@@ -438,7 +470,7 @@
                             </div>
                             <div class="stories__swiper swiper-slide">
                                 <div class="stories__swiper-video">
-                                    <img src="img/play.png" alt="play">
+                                    <img class="stories__siper-video_img img-adaptive" src="img/stories-video.png" alt="play">
                                 </div>
                                 <div class="stories__video-info">
                                     <h5 class="stories__video-title">Костя</h5>
@@ -450,7 +482,7 @@
                             </div>
                             <div class="stories__swiper swiper-slide">
                                 <div class="stories__swiper-video">
-                                    <img src="img/play.png" alt="play">
+                                    <img class="stories__siper-video_img img-adaptive" src="img/stories-video.png" alt="play">
                                 </div>
                                 <div class="stories__video-info">
                                     <h5 class="stories__video-title">Костя</h5>
@@ -477,15 +509,15 @@
             <div class="map-section__body">
                 <h1 class="map-section__title title">Площадки и расписание по всей москве - <a class="map__title-link" href="#">здесь</a></h1>
                 <div class="map-section__map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aacc5e6828aaca48696fc4d1f5f14df7027d12143c9ea094d215718b4cf79ed2e&amp;width=1170&amp;height=500&amp;lang=ru_RU&amp;scroll=true">
-                    </script>
+
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aacc5e6828aaca48696fc4d1f5f14df7027d12143c9ea094d215718b4cf79ed2e&amp;width=100%25&amp;height=442&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
             </div>
         </section>
 
         <section class="gifts">
             <div class="gifts__body">
-                <img src="img/bag.png" alt="bag">
+                <img class="gifts__img img-adaptive" src="img/bag.png" alt="bag">
                 <div class="gifts__lsit-block">
                     <h1 class="gifts__title title">Дарим призы</h1>
                     <div class="gifts__item-table">
@@ -574,7 +606,7 @@
         <section class="our-team">
             <div class="our-team__body">
                 <div class="our-team__image-block">
-                    <img src="img/ourteam.png" alt="our-team">
+                    <img class="img-adaptive" src="img/ourteam.png" alt="our-team">
                 </div>
 
                 <div class="our-team__info">
@@ -672,6 +704,21 @@
                         <li class="footer__fast-link"><a href="#">Франшиза</a></li>
                     </ul>
                 </div>
+
+
+
+                <div class="mobile-footer__about-us">
+                    <p class="footer__text">г. Москва <br> ул. Большая Новодмитровская, 23c6 <br><br> info@obraz.pro <br><br> Понедельник - Воскресенье: <br> 09:00 - 20:00</p>
+                    <ul class="mobile-footer__documents-menu">
+                        <li class="footer_document-link"><a href="#">Согласие на обработку персональных данных</a></li>
+                        <li class="footer_document-link"><a href="#">Оферта</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
                 <div class="footer__documents">
                     <h5 class="footer__title">ДОКУМЕНТЫ</h5>
                     <ul class="footer__documents-menu">
@@ -681,6 +728,7 @@
                 </div>
                 <div class="footer__social-network">
                     <h5 class="footer__title">СОЦ.СЕТИ</h5>
+                    <p class="footer__social-network-tel"> +7 (495) 748-00-66 <br></p>
                     <ul class="footer__social-network-menu">
                         <li class="footer__social-network-link">
                             <a href="#"><img src="img/footerfb.png" alt="facebook"></a>
