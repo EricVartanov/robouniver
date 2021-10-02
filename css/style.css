@@ -124,7 +124,7 @@
     
     .mobile__menu-btn {
         width: 19px;
-        height: 12px;
+        height: 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -142,7 +142,7 @@
     
     .row-1-animation {
         transition: 0.5s;
-        transform: rotate(45deg) translateY(5px) translateX(2px);
+        transform: rotate(45deg) translateY(5px) translateX(5px);
     }
     
     .row-2-animation {
@@ -152,7 +152,7 @@
     
     .row-3-animation {
         transition: 0.5s;
-        transform: rotate(-45deg) translateY(-5px) translateX(2px);
+        transform: rotate(-45deg) translateY(-5px) translateX(5px);
     }
     
     .row-animation-none {
