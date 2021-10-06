@@ -556,6 +556,10 @@
                         .stories__swiper {
                             align-items: center;
                         }
+                        .stories__btn-next,
+                        .stories__btn-prev {
+                            display: none;
+                        }
                         .stories__siper-video_img {
                             width: 100%;
                             height: auto;
