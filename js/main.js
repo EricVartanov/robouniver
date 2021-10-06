@@ -21,10 +21,6 @@ $(document).ready(function() {
 
 
     //22 плюса
-    const pluses = $('.pluses__content')
-    const plusesBtn = $('.pluses__see-all')
-    const plusesArrow = $('.pluses__down-arrow')
-    const plusesBtnText = $('.pluses__see-all_text')
 
 
     progBtn.click(() => {
@@ -44,6 +40,12 @@ $(document).ready(function() {
 
     })
 
+    const pluses = $('.pluses__content')
+    const plusesBtn = $('.pluses__see-all')
+    const plusesArrow = $('.pluses__down-arrow')
+    const plusesBtnText = $('.pluses__see-all_text')
+
+
     plusesBtn.click(() => {
         if (pluses.hasClass('pluses__see-all_closed')) {
             pluses.removeClass('pluses__see-all_closed')
@@ -57,6 +59,28 @@ $(document).ready(function() {
             pluses.addClass('pluses__see-all_closed')
             plusesArrow.removeClass('see-all__arrow_up')
             plusesBtnText.text('Смотреть еще 16 преимуществ')
+        }
+
+    })
+
+    const questions = $('.questions__list')
+    const questionsBtn = $('.questions__see-all')
+    const questionsArrow = $('.questions__down-arrow')
+    const questionsBtnText = $('.questions__see-all_text')
+
+    questionsBtn.click(() => {
+        if (questions.hasClass('questions__see-all_closed')) {
+            questions.removeClass('questions__see-all_closed')
+            questions.addClass('questions__see-all_opened')
+            questionsArrow.addClass('see-all__arrow_up')
+            questionsBtnText.text('Свернуть')
+
+        } else {
+
+            questions.removeClass('questions__see-all_opened')
+            questions.addClass('questions__see-all_closed')
+            questionsArrow.removeClass('see-all__arrow_up')
+            questionsBtnText.text('Показать еще')
         }
 
     })
@@ -82,8 +106,6 @@ $(document).ready(function() {
         // mobileMenu.toggleClass('mobile-navbar__nav_opened')
         mobileMenu.slideToggle(500)
     })
-
-
 
 
 

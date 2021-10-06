@@ -397,13 +397,13 @@
     }
     
     .programm__see-all_closed {
-        transition: all 1s ease-out;
-        height: 700px;
+        transition: all 0.5s ease-in;
+        max-height: 700px;
     }
     
     .programm__see-all_opened {
-        transition: all 1s ease-in;
-        height: 2000px;
+        transition: all 1s ease-in-out;
+        max-height: 3000px;
     }
     
     .see-all__arrow_up {
@@ -443,6 +443,10 @@
     .pluses__title {
         margin-bottom: 50px;
         text-align: center;
+    }
+    
+    .mobile-pluses__slider-body {
+        display: none;
     }
     
     .pluses__content {
@@ -795,7 +799,11 @@
     .robots__array {
         position: absolute;
         top: 10px;
-        left: 40%;
+        left: 42%;
+    }
+    
+    .mobile-robots__array {
+        display: none
     }
     
     .robots__content-items {
@@ -908,6 +916,11 @@
         max-height: 140px;
         margin: 0;
     }
+    
+    .stories-swiper-pagination {
+        display: none;
+        margin-top: 20px;
+    }
     /* map section  */
     
     .map-section {
@@ -964,6 +977,10 @@
     .gifts__title {
         margin: 0;
         margin-bottom: 40px;
+    }
+    
+    .mobile-gifts__item-swiper {
+        display: none;
     }
     
     .gifts__item-table {
@@ -1111,6 +1128,10 @@
         color: #FF534B;
         font-family: 'Rubik', sans-serif;
     }
+    
+    .price__button {
+        display: none;
+    }
     /* our team  */
     
     .our-team {
@@ -1237,6 +1258,10 @@
         stroke: #FF534B;
     }
     
+    .questions__item-down-arrow {
+        display: none;
+    }
+    
     .questions__item:hover .questions__item-number {
         transition: 0.3s;
         color: #FF534B;
@@ -1267,6 +1292,10 @@
     
     .questions__plus {
         margin-left: auto;
+    }
+    
+    .questions__see-all {
+        display: none;
     }
     /* footer */
     
@@ -1323,6 +1352,10 @@
     .footer__about-us {
         max-height: 177px;
         max-width: 269px;
+    }
+    
+    .mobile-footer__about-us {
+        display: none;
     }
     
     .footer__fast-links {
